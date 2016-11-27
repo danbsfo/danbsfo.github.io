@@ -1,0 +1,92 @@
+/* General */
+html,body,div {
+  margin:0;
+  padding:0;
+  border:0;
+  text-decoration:none;
+  font-family:-apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+p {
+  text-align:justify;
+  text-justify:newspaper;
+  hyphens:auto;
+}
+a {
+  text-decoration:none;
+  font-weight:800;
+  font-size:1.2em;
+  color:#000;
+}
+
+/* Header & Intro */
+.header {
+  margin-top:-100px;
+  margin-left:-120px;
+  min-height:240px;
+  vertical-align:middle;
+  background-size: cover; 
+  background:url(assets/sfskyline.jpg) no-repeat center;
+}
+.container {
+  margin:20px;
+  margin-top:15px;
+  margin-bottom:50px;
+}
+@media screen and (min-width:800px) {
+  .container {
+    margin-left:20%;
+    margin-right:20%;
+  }
+}
+.intro {
+  position:relative;
+  min-height:80px;
+}
+.avatar {
+  height:80px;
+}
+.links {
+  float:right;
+}
+.links > a > img {
+  width:32px;
+  height:32px;
+}
+.photo {
+  float:left;
+}
+
+/* Project Details */
+section > div {
+  min-height:200px;
+  margin:auto;
+  width:504px;
+  text-align:justify;
+  line-height:1.4em;
+  padding-bottom:15px;
+  background-color: #e0e0e0;
+}
+section > div > p {
+  padding:7px;
+}
+section > div > p > img {
+  padding-left:37px;
+}
+.title {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:80px;
+}
+.title div {
+  text-transform:uppercase;
+  font-size:0.8em;
+  text-align:center; 
+}
+
+/* The end */
+footer {
+  padding-top:20px;
+  text-align:center;
+  font-size:0.8em;
+}
