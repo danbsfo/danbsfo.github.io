@@ -63,6 +63,11 @@ a {
 }
 
 /* Project Details */
+span.date {
+  padding-left:20px;
+  font-size:0.7em;
+  color:#222;
+}
 section > div {
   min-height:200px;
   margin:auto;
