@@ -75,7 +75,7 @@ section > div {
   margin:auto;
 }
 section > div.details {
-  min-height:200px;
+  min-height:210px;
   text-align:justify;
   line-height:1.4em;
   padding-bottom:5px;
