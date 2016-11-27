@@ -24,7 +24,7 @@ a {
   margin-left:-120px;
   min-height:240px;
   vertical-align:middle;
-  background-size: cover; 
+  background-size: cover;
   background:url(assets/sfskyline.jpg) no-repeat center;
 }
 .container {
@@ -64,18 +64,23 @@ a {
 
 /* Project Details */
 span.date {
-  padding-left:20px;
+  right:5px;
+  position:absolute;
   font-size:0.7em;
   color:#222;
 }
 section > div {
-  min-height:200px;
-  margin:auto;
+  position:relative;
   width:504px;
+  margin:auto;
+}
+section > div.details {
+  min-height:200px;
   text-align:justify;
   line-height:1.4em;
-  padding-bottom:15px;
+  padding-bottom:5px;
   background-color: #e0e0e0;
+  margin-bottom:50px;
 }
 section > div > p {
   padding:7px;
@@ -92,7 +97,7 @@ section > div > p > img {
 .title div {
   text-transform:uppercase;
   font-size:0.8em;
-  text-align:center; 
+  text-align:center;
 }
 
 /* The end */
