@@ -95,6 +95,10 @@ section > div > p > img {
   padding-left:37px;
 }
 
+.app-creepy { margin-top:-390px; }
+.app-synomem { margin-top:-220px; }
+.app-simplepark { margin-top:-100px; }
+
 /* The end */
 footer {
   padding-top:20px;
@@ -138,4 +142,7 @@ div.imgcontainer {
   div.imgcontainer {
     height:510px;
   }
+  .app-creepy { margin-top:-780px; }
+  .app-synomem { margin-top:-440px; }
+  .app-simplepark { margin-top:-200px; }
 }
