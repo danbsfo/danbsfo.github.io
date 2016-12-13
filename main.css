@@ -45,7 +45,7 @@ a {
   text-align:center;
   height:80px;
   margin:0 auto;
-  z-index:1000;
+  z-index:1;
   position:absolute;
   left:0;
   width:100%;
@@ -60,6 +60,7 @@ a {
 }
 .links {
   float:right;
+  z-index:10;
 }
 .links > a > img {
   width:32px;
