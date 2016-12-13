@@ -35,6 +35,20 @@ a {
 .intro {
   position:relative;
   min-height:80px;
+  width:100%;
+  text-align:center;
+}
+.title {
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+  height:80px;
+  margin:0 auto;
+}
+.title div {
+  text-transform:uppercase;
+  font-size:0.8em;
+  text-align:center;
 }
 .avatar {
   height:80px;
@@ -66,7 +80,7 @@ section > div.details {
   text-align:justify;
   line-height:1.4em;
   padding-bottom:5px;
-  background-color: #e0e0e0;
+  background-color: #f6f6ef;
   margin-bottom:50px;
 }
 section > div > p {
@@ -75,23 +89,20 @@ section > div > p {
 section > div > p > img {
   padding-left:37px;
 }
-.title {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  height:80px;
-}
-.title div {
-  text-transform:uppercase;
-  font-size:0.8em;
-  text-align:center;
-}
 
 /* The end */
 footer {
   padding-top:20px;
   text-align:center;
   font-size:0.8em;
+}
+
+/* Experimental */
+div.imgcontainer {
+  margin-bottom:20px;
+  max-height:300px;
+  overflow:hidden;
+  width:100%
 }
 
 /* Screen */
