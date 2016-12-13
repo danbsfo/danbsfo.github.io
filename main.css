@@ -132,4 +132,7 @@ div.imgcontainer {
     width:64px;
     height:64px;
   }
+  div.imgcontainer {
+    height:450px;
+  }
 }
