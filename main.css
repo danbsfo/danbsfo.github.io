@@ -121,6 +121,9 @@ div.imgcontainer {
   }
 }
 @media screen and (min-device-width:320px) and (-webkit-min-device-pixel-ratio:2) {
+  p {
+    font-size:1.4em;
+  }
   .container {
     margin-left:20px;
     margin-right:20px;
@@ -133,6 +136,6 @@ div.imgcontainer {
     height:64px;
   }
   div.imgcontainer {
-    height:450px;
+    height:510px;
   }
 }
