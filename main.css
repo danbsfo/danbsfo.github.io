@@ -55,6 +55,9 @@ a {
   font-size:0.8em;
   text-align:center;
 }
+.title div img {
+  height:36px;
+}
 .avatar {
   height:80px;
 }
@@ -91,8 +94,16 @@ section > div.details {
 section > div > p {
   padding:7px;
 }
-section > div > p > img {
-  padding-left:37px;
+
+.imgcontainer {
+  margin-bottom:20px;
+  height:300px;
+  overflow:hidden;
+  width:100%
+}
+
+.imgcontainer img {
+  width:100%;
 }
 
 .app-creepy { margin-top:-390px; }
@@ -106,14 +117,6 @@ footer {
   font-size:0.8em;
 }
 
-/* Experimental */
-div.imgcontainer {
-  margin-bottom:20px;
-  height:300px;
-  overflow:hidden;
-  width:100%
-}
-
 /* Screen */
 @media screen and (min-width:800px) {
   .container {
@@ -125,12 +128,15 @@ div.imgcontainer {
   }
 }
 @media screen and (min-device-width:320px) and (-webkit-min-device-pixel-ratio:2) {
-  p {
+  body {
     font-size:1.4em;
   }
   .container {
     margin-left:20px;
     margin-right:20px;
+  }
+  .title div img {
+    height:72px;
   }
   section > div {
     width:auto;
@@ -141,6 +147,9 @@ div.imgcontainer {
   }
   div.imgcontainer {
     height:510px;
+  }
+  span.date {
+    font-size: 1.0em;
   }
   .app-creepy { margin-top:-780px; }
   .app-synomem { margin-top:-440px; }
