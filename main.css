@@ -106,6 +106,7 @@ section > div > p {
   width:100%;
 }
 
+.app-ws { margin-top:-595px; }
 .app-creepy { margin-top:-390px; }
 .app-synomem { margin-top:-220px; }
 .app-simplepark { margin-top:-100px; }
@@ -151,6 +152,7 @@ footer {
   span.date {
     font-size: 1.0em;
   }
+  .app-ws { margin-top:-1190px; }
   .app-creepy { margin-top:-780px; }
   .app-synomem { margin-top:-440px; }
   .app-simplepark { margin-top:-200px; }
