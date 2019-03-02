@@ -119,16 +119,14 @@ footer {
 }
 
 /* Screen */
-@media screen and (min-width:800px) {
-  .container {
-    margin-left:20%;
-    margin-right:20%;
-  }
-  section > div {
-    width:504px;
-  }
+.container {
+  margin-left:20%;
+  margin-right:20%;
 }
-@media screen and (min-device-width:320px) and (-webkit-min-device-pixel-ratio:2) {
+section > div {
+  width:504px;
+}
+@media screen and (max-device-width:740px) and (-webkit-min-device-pixel-ratio:2) {
   body {
     font-size:1.4em;
   }
