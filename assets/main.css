@@ -1,0 +1,159 @@
+/* General */
+html,body,div {
+  margin:0;
+  padding:0;
+  border:0;
+  background-color: #efefef;
+  text-decoration:none;
+  font-family:-apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+p {
+  text-align:justify;
+  text-justify:newspaper;
+  hyphens:auto;
+}
+a {
+  text-decoration:none;
+  font-weight:800;
+  font-size:1.2em;
+  color:#000;
+}
+
+/* Header & Intro */
+.header {
+  margin-top:-100px;
+  margin-left:-120px;
+  min-height:240px;
+  vertical-align:middle;
+  background-size: cover;
+  background:url(assets/sfskyline.jpg) no-repeat center;
+}
+.container {
+  margin:20px;
+  margin-top:15px;
+  margin-bottom:50px;
+}
+.intro {
+  position:relative;
+  min-height:80px;
+  width:100%;
+  text-align:center;
+}
+.title {
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  height:80px;
+  margin:0 auto;
+  position:absolute;
+  left:0;
+  width:100%;
+}
+.title div {
+  text-transform:uppercase;
+  font-size:0.6em;
+  text-align:center;
+}
+.title div img {
+  height:36px;
+}
+.avatar {
+  height:80px;
+}
+.links {
+  float:right;
+}
+.links > a > img {
+  width:32px;
+  height:32px;
+}
+.photo {
+  float:left;
+}
+
+/* Project Details */
+.border {
+  border-top: 1px dotted #aaa;
+}
+span.date {
+  right:5px;
+  position:absolute;
+  font-size:0.7em;
+  color:#222;
+}
+section > div {
+  position:relative;
+  margin:auto;
+}
+section > div.details {
+  min-height:210px;
+  text-align:justify;
+  line-height:1.4em;
+  padding-bottom:5px;
+  margin-bottom:50px;
+}
+section > div > p {
+  padding:7px;
+}
+
+.imgcontainer {
+  margin-bottom:20px;
+  height:300px;
+  overflow:hidden;
+  width:100%
+}
+
+.imgcontainer img {
+  width:100%;
+}
+
+.app-ws { margin-top:-595px; }
+.app-creepy { margin-top:-390px; }
+.app-synomem { margin-top:-220px; }
+.app-simplepark { margin-top:-100px; }
+
+/* The end */
+footer {
+  padding-top:20px;
+  text-align:center;
+  font-size:0.8em;
+}
+
+/* Screen */
+.container {
+  margin-left:20%;
+  margin-right:20%;
+}
+section > div {
+  width:504px;
+}
+@media screen and (max-device-width:740px) and (-webkit-min-device-pixel-ratio:2) {
+  body {
+    font-size:1.4em;
+  }
+  .container {
+    margin-left:20px;
+    margin-right:20px;
+  }
+  .title div img {
+    height:72px;
+  }
+  section > div {
+    width:auto;
+  }
+  .links > a > img {
+    width:64px;
+    height:64px;
+  }
+  div.imgcontainer {
+    height:510px;
+  }
+  span.date {
+    font-size: 1.0em;
+  }
+  .app-ws { margin-top:-1190px; }
+  .app-creepy { margin-top:-780px; }
+  .app-synomem { margin-top:-440px; }
+  .app-simplepark { margin-top:-200px; }
+}
