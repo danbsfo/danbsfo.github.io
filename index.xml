@@ -5,10 +5,19 @@
     <link>https://dan.bulwinkle.net/</link>
     <description>Recent content on Dan Bulwinkle</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 23 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dan.bulwinkle.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>You Can&#39;t Top Bitcoin</title>
+      <link>https://dan.bulwinkle.net/blog/you-cant-top-bitcoin/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://dan.bulwinkle.net/blog/you-cant-top-bitcoin/</guid>
+      <description>Bitcoin has endured over a decade, and contenders are constantly being deployed. Why is it the best cryptocurrency? Here I review cash, gold, mobile, and other decentralized platforms and how they compare with Bitcoin. I consider myself a crypto altruist; I don&amp;rsquo;t subscribe to any sort of maximalism of any cryptocurrency. I want to see everyone have access to this technology regardless of the particular implementation, so long as it is entirely open source and has been peer reviewed by computer scientists1.</description>
+    </item>
     
     <item>
       <title>Grocery &amp; Meal Delivery</title>
