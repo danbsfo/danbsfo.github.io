@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dan Bulwinkle</title>
@@ -16,7 +16,7 @@
       <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://dan.bulwinkle.net/blog/how-i-use-streaming-services/</guid>
-      <description>The rise of Netflix naturally led to competitors in the media space wanting a piece of the action. Netflix deals started to wane and they found themselves with no choice but to commission original content. Is Netflix&amp;rsquo;s position sustainable, or did they simply create the first British Restaurant in Silicon Valley? Participating in the transition from Blockbuster through Netflix online streaming service was an interesting lesson in change of market dynamics.</description>
+      <description>The rise of Netflix naturally led to competitors in the media space wanting a piece of the action. Netflix deals started to wane and they found themselves with no choice but to commission original content. What does the future of media streaming look like?</description>
     </item>
     
     <item>
@@ -25,7 +25,7 @@
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://dan.bulwinkle.net/blog/you-cant-top-bitcoin/</guid>
-      <description>Bitcoin has endured over a decade, and contenders are constantly being deployed. Why is it the best cryptocurrency? Here I review cash, gold, mobile, and other decentralized platforms and how they compare with Bitcoin. I consider myself a crypto altruist; I don&amp;rsquo;t subscribe to any sort of maximalism of any cryptocurrency. I want to see everyone have access to this technology regardless of the particular implementation, so long as it is entirely open source and has been peer reviewed by computer scientists1.</description>
+      <description>Bitcoin has endured over a decade, and contenders are constantly being deployed. Why is it the best cryptocurrency? Here I review cash, gold, mobile, and other decentralized platforms and how they compare with Bitcoin.</description>
     </item>
     
     <item>
@@ -34,7 +34,7 @@
       <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://dan.bulwinkle.net/blog/grocery-and-meal-delivery/</guid>
-      <description>Why Don’t Grocery Delivery Services Have Inventory? I still go to the grocery store in part for the experience and the discovery process. Often times, however, I’ve wished I could just skip the store and have the groceries appear within a day. The problem with that is then I need to sign up for some delivery service and still spend time paging through an app to find dozens of necessities.</description>
+      <description>Why Don’t Grocery Delivery Services Have Inventory?</description>
     </item>
     
     <item>
@@ -43,8 +43,7 @@
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
       <guid>https://dan.bulwinkle.net/blog/hyperloop-may-create-new-cities/</guid>
-      <description>City Planning and Real Estate Markets May Become Vastly Different If Hyperloop Succeeds Hyperloop concept from the original SpaceX white paper.Were I to create a hyperloop company I may call it R-Loop to emphasize keeping out the hype. If I was lucky maybe one day it would be known simply as “The R” just as elevated trains in Philly and Chicago are known as “The El.”
-It’s been just a couple years since two major hyperloop companies have been in existence and the outlook is dubious.</description>
+      <description>City Planning and Real Estate Markets May Become Vastly Different If Hyperloop Succeeds</description>
     </item>
     
   </channel>
