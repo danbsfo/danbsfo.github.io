@@ -5,10 +5,19 @@
     <link>https://dan.bulwinkle.net/</link>
     <description>Recent content on Dan Bulwinkle</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 08 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dan.bulwinkle.net/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>&#34;How Do You Know?&#34;</title>
+      <link>https://dan.bulwinkle.net/blog/how-do-you-know/</link>
+      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://dan.bulwinkle.net/blog/how-do-you-know/</guid>
+      <description>An important lesson from Y Combinator&amp;rsquo;s Startup School</description>
+    </item>
     
     <item>
       <title>How I Use Streaming Services</title>
