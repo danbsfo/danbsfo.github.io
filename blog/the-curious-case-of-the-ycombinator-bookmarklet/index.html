@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>
+      
+          The Curious Case of the YCombinator Bookmarklet - Dan Bulwinkle
+      
+  </title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="map[]" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://dan.bulwinkle.net/img/favicon.ico">
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://dan.bulwinkle.net/style.min.1ed645f465aa60f9f9b594f77d2c95c2669ac7f52c414077153882f051e7a768.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  
+  
+
+  <meta property="og:title" content="The Curious Case of the YCombinator Bookmarklet" />
+<meta property="og:description" content="Why was I seeing bookmarklet submissions so frequently on the /new page?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dan.bulwinkle.net/blog/the-curious-case-of-the-ycombinator-bookmarklet/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2021-03-28T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-03-28T00:00:00&#43;00:00" />
+
+<meta itemprop="name" content="The Curious Case of the YCombinator Bookmarklet">
+<meta itemprop="description" content="Why was I seeing bookmarklet submissions so frequently on the /new page?"><meta itemprop="datePublished" content="2021-03-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-03-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="224">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Curious Case of the YCombinator Bookmarklet"/>
+<meta name="twitter:description" content="Why was I seeing bookmarklet submissions so frequently on the /new page?"/>
+
+  <!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+
+  </head>
+
+  <body>
+    
+  <header>
+  
+  <div class="avatar">
+    <img class="avatarMask" src="https://dan.bulwinkle.net//img/../assets/hi.jpg">
+    <a href="https://dan.bulwinkle.net/"><img src="https://dan.bulwinkle.net//img/avatar-border.svg" }}></a>
+  </div>
+  
+  <h2><a class="author" href="https://dan.bulwinkle.net/">Dan Bulwinkle</a></h2>
+</header>
+
+  
+  <h1>The Curious Case of the YCombinator Bookmarklet</h1>
+  <p class="date">28 March 2021<br>
+  <span style="font-size:0.7em;">2 minute read</p>
+  
+  <div id="contentBody">
+    <div style="margin:auto;text-align:center;margin:10px;">
+  <img src="https://dan.bulwinkle.net/blog/img/bookmarklet.png" alt="YC Bookmarklet Page">
+</div>
+<p>I frequent the /new page of Hacker News, usually to find interesting articles
+that were missed by the masses<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. In recent years I noticed that people were
+submitting &ldquo;<a href="https://news.ycombinator.com/bookmarklet.html">Y Combinator Bookmarklet</a>&rdquo;
+at least several times a week. From time to time, this would get a small number of upvotes.</p>
+<p>After a while I started wondering why people were submitting this so frequently.
+Reviewing the bookmarklet page, it suddenly became clear<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Logged-in HN users were <em>clicking the
+link which would then submit the bookmarklet page itself to Hacker News</em>. At
+some point these links were simply automatically marked dead whenever submitted.</p>
+<div style="margin:auto;text-align:center;margin:10px;">
+  <img src="https://dan.bulwinkle.net/blog/img/deadlink.png" width="500" alt="HN ">
+</div>
+<p>But, there is a better (and simple) solution! Just add javascript to prevent
+the default behavior. The yellow highlighted text below shows the change.</p>
+<div style="margin:auto;text-align:center;margin:10px;">
+  <img src="https://dan.bulwinkle.net/blog/img/jssolution.png" alt="YC Bookmarklet Solution">
+</div>
+<p>This allows users to drag the bookmarklet to their toolbar while preventing them
+from accidentally submitting to HN. An ancillary benefit is that, due to how YC
+titles their pages, it will no longer be known as &ldquo;Y Combinator Bookmarklet.&rdquo;</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>This seems to be a problem with HN. First, there should be a preference
+where landing on /new is the default. Second &ndash; I&rsquo;m not sure the solution &ndash;
+there should be a way to allow for long-form articles because they rarely
+if ever make it to the front page. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>No worries, I did not click the link! <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+  </div>
+  <footer>
+  <p>
+  &copy; 2020 Dan Bulwinkle.
+  Powered by <a href="https://gohugo.io/">Hugo</a>
+  using the <a href="https://github.com/koirand/pulp/">pulp</a> theme.
+  </p>
+</footer>
+
+
+  </body>
+</html>

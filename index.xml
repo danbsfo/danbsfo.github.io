@@ -5,10 +5,15 @@
     <link>https://dan.bulwinkle.net/</link>
     <description>Recent content on Dan Bulwinkle</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 23 Feb 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://dan.bulwinkle.net/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 28 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dan.bulwinkle.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Curious Case of the YCombinator Bookmarklet</title>
+      <link>https://dan.bulwinkle.net/blog/the-curious-case-of-the-ycombinator-bookmarklet/</link>
+      <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://dan.bulwinkle.net/blog/the-curious-case-of-the-ycombinator-bookmarklet/</guid>
+      <description>Why was I seeing bookmarklet submissions so frequently on the /new page?</description>
+    </item>
     
     <item>
       <title>There Should Be More Mergers</title>
