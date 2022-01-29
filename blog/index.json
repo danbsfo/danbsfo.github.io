@@ -1,5 +1,21 @@
 [
     {
+        "ref": "https://dan.bulwinkle.net/blog/phone-is-still-the-best-way-to-order-pizza/",
+        "title": "Phone is Still the Best Way to Order Pizza",
+        "section": "blog",
+        "date" : "2022.01.27",
+        "body": "Version 0.9\n When ordering pizza for pickup, there is no easier way to do it than using a phone. On average, it takes no more than 20 seconds:\n Dial number Say: \u0026ldquo;Large Pizza for Pickup\u0026rdquo; Hear: \u0026ldquo;OK. 15-20 minutes.\u0026rdquo;  There are many, many websites and apps that partner with local pizza shops. Often these apps require you to sign up or add excess information. Why is one required to put in first name, last name, phone, email, and address when phone number and first name is all that\u0026rsquo;s required when calling?\nWhat\u0026rsquo;s worse is that almost all of these apps require you to \u0026ldquo;sign up.\u0026rdquo; This is one of those situations where signing up is irrelevant, just like with most mobile apps1. In theory I should be able to autocomplete first name and phone number (maybe credit card2) and voilà my pizza is in queue. Signing up for yet-another-food-service-app is a turn off.\nThat technology is causing more friction than less isn\u0026rsquo;t surprising. It seems recently that a lot of technology does this. An obvious example is captcha. We wouldn\u0026rsquo;t have hilarious coffee drinking robot commercials without it!\nIf only the solution were so simple as to build an app that only required first name and phone number (and dumped that info or just store it in localstorage). The biggest issue of course is getting the menu items into the system. Maybe that\u0026rsquo;s not even necessary. Why not just have an image of a menu and a box where you type the order. \u0026ldquo;Extra large pizza, half green peppers and onions, half extra cheese.\u0026rdquo; Already this system feels like it would in the worst case match a phone call, but probably cut that time in half \u0026ndash; especially if utilizing localstorage. Maybe one day technology can play a role in improving user experience rather than destroying it.\n  Mobile apps can create unique device identifiers, and on iOS they can also leverage iCloud to store information when moving to new devices. \u0026#x21a9;\u0026#xfe0e;\n This shouldn\u0026rsquo;t be necessary, but if for some reason people are submitting fake pizza requests I guess it could be required. People still use cash; something I\u0026rsquo;ve been doing recently as a mechanism for budgeting. \u0026#x21a9;\u0026#xfe0e;\n   "
+    }
+,
+    {
+        "ref": "https://dan.bulwinkle.net/blog/new-blogging-paradigm/",
+        "title": "New Blogging Paradigm: Drafts",
+        "section": "blog",
+        "date" : "2022.01.21",
+        "body": "One of the challenges for blogging consistently is finding the time to do it and make good posts. Posts like \u0026ldquo;Who is Satoshi\u0026rdquo; or \u0026ldquo;YC Bookmarklet\u0026rdquo; were simple enough to knock out, so I did.\nFor some time I\u0026rsquo;ve wanted to write about in depth topics like self-driving cars. This is what I\u0026rsquo;ll post next; and while I try to keep a positive vibe on this blog, that next post will be rather critical.\nIn order to accomplish this, instead of spending a lot of time crafting a blog post, I will post drafts and revise them. Each post will start at 0.1 and maybe one day it\u0026rsquo;ll reach 1.0.\n"
+    }
+,
+    {
         "ref": "https://dan.bulwinkle.net/blog/who-is-satoshi-nakamoto/",
         "title": "Who Is Satoshi Nakamoto?",
         "section": "blog",
@@ -13,14 +29,6 @@
         "section": "blog",
         "date" : "2021.03.28",
         "body": " I frequent the /new page of Hacker News, usually to find interesting articles that were missed by the masses1. In recent years I noticed that people were submitting \u0026ldquo;Y Combinator Bookmarklet\u0026rdquo; at least several times a week. From time to time, this would get a small number of upvotes.\nAfter a while I started wondering why people were submitting this so frequently. Reviewing the bookmarklet page, it suddenly became clear2. Logged-in HN users were clicking the link which would then submit the bookmarklet page itself to Hacker News. At some point these links were simply automatically marked dead whenever submitted.\n But, there is a better (and simple) solution! Just add javascript to prevent the default behavior. The yellow highlighted text below shows the change.\n This allows users to drag the bookmarklet to their toolbar while preventing them from accidentally submitting to HN. An ancillary benefit is that, due to how YC titles their pages, it will no longer be known as \u0026ldquo;Y Combinator Bookmarklet.\u0026rdquo;\n  This seems to be a problem with HN. First, there should be a preference where landing on /new is the default. Second \u0026ndash; I\u0026rsquo;m not sure the solution \u0026ndash; there should be a way to allow for long-form articles because they rarely if ever make it to the front page. \u0026#x21a9;\u0026#xfe0e;\n Worry not, I did not click the link! \u0026#x21a9;\u0026#xfe0e;\n   "
-    }
-,
-    {
-        "ref": "https://dan.bulwinkle.net/blog/new-blogging-paradigm/",
-        "title": "New Blogging Paradigm: Drafts",
-        "section": "blog",
-        "date" : "2021.01.21",
-        "body": "One of the challenges for blogging consistently is finding the time to do it and make good posts. Posts like \u0026ldquo;Who is Satoshi\u0026rdquo; or \u0026ldquo;YC Bookmarklet\u0026rdquo; were simple enough to knock out, so I did.\nFor some time I\u0026rsquo;ve wanted to write about in depth topics like self-driving cars. This is what I\u0026rsquo;ll post next; and while I try to keep a positive vibe on this blog, that next post will be rather critical.\nIn order to accomplish this, instead of spending a lot of time crafting a blog post, I will post drafts and revise them. Each post will start at 0.1 and maybe one day it\u0026rsquo;ll reach 1.0.\n"
     }
 ,
     {
