@@ -1,5 +1,13 @@
 [
     {
+        "ref": "https://dan.bulwinkle.net/blog/ask-for-referrals-anyway/",
+        "title": "Ask VCs for Referrals Anyway",
+        "section": "blog",
+        "date" : "2022.05.29",
+        "body": "Some years ago I saw a well-known1 investor on Twitter say, in effect, that if he decided not to invest in you, don\u0026rsquo;t ask for referrals.\nFrom an investor\u0026rsquo;s perspective, this often makes perfect sense. Great investors place their money with people they believe will succeed, and perhaps there were so many red flags the investor couldn\u0026rsquo;t possibly recommend the entrepreneur to anyone.\nIf the investor is talking to the entrepreneur in the first place, however, it probably means they passed some kind of initial screen: they aren\u0026rsquo;t completely out there. There are countless stories where investors declined entrepreneurs early on like multiple decacorn company builders Dorsey and Musk.\nDon Valentine did not initially invest in Apple2. Instead, he referred Mike Markkula to Steve Jobs. Markkula invested first, then Valentine invested with Sequoia a year later. Can you imagine if Don Valentine simply brushed them off and said no? I may not be talking about Don Valentine right now, for one.\nMost venture capital firms have an investment thesis that is procured to their LPs. Angel and seed investors have their own verticals and criteria for investing. The narrow scope of these theses precludes at least some power law wins. After all, I know of no thesis that is, \u0026ldquo;Invest only in companies that will go public.\u0026rdquo;\n\u0026ldquo;I have traction on my college social network\u0026rdquo; \u0026ldquo;We are a B2B outfit.\u0026rdquo;\n\u0026ldquo;I have an idea for an electric car.\u0026rdquo; \u0026ldquo;Oh, we only invest in software.\u0026rdquo;\nA great investor will try to help in some way. They may know someone in their network who has a completely different perspective. If that person invests they can turn around and reason with the first investor, or the first investor can still have a way in to the next round. It\u0026rsquo;s also just good business.\n  I don\u0026rsquo;t quite recall who it was. \u0026#x21a9;\u0026#xfe0e;\n https://news.ycombinator.com/item?id=2422032 \u0026#x21a9;\u0026#xfe0e;\n   "
+    }
+,
+    {
         "ref": "https://dan.bulwinkle.net/blog/phone-is-still-the-best-way-to-order-pizza/",
         "title": "Phone is Still the Best Way to Order Pizza",
         "section": "blog",
@@ -25,7 +33,7 @@
 ,
     {
         "ref": "https://dan.bulwinkle.net/blog/the-curious-case-of-the-ycombinator-bookmarklet/",
-        "title": "The Curious Case of the YCombinator Bookmarklet",
+        "title": "The Curious Case of the Y Combinator Bookmarklet",
         "section": "blog",
         "date" : "2021.03.28",
         "body": " I frequent the /new page of Hacker News, usually to find interesting articles that were missed by the masses1. In recent years I noticed that people were submitting \u0026ldquo;Y Combinator Bookmarklet\u0026rdquo; at least several times a week. From time to time, this would get a small number of upvotes.\nAfter a while I started wondering why people were submitting this so frequently. Reviewing the bookmarklet page, it suddenly became clear2. Logged-in HN users were clicking the link which would then submit the bookmarklet page itself to Hacker News. At some point these links were simply automatically marked dead whenever submitted.\n But, there is a better (and simple) solution! Just add javascript to prevent the default behavior. The yellow highlighted text below shows the change.\n This allows users to drag the bookmarklet to their toolbar while preventing them from accidentally submitting to HN. An ancillary benefit is that, due to how YC titles their pages, it will no longer be known as \u0026ldquo;Y Combinator Bookmarklet.\u0026rdquo;\n  This seems to be a problem with HN. First, there should be a preference where landing on /new is the default. Second \u0026ndash; I\u0026rsquo;m not sure the solution \u0026ndash; there should be a way to allow for long-form articles because they rarely if ever make it to the front page. \u0026#x21a9;\u0026#xfe0e;\n Worry not, I did not click the link! \u0026#x21a9;\u0026#xfe0e;\n   "
