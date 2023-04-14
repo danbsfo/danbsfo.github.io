@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>
+      
+          Automate Hotels - Dan Bulwinkle
+      
+  </title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Dan Bulwinkle" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://dan.bulwinkle.net/img/favicon.ico">
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="https://dan.bulwinkle.net/style.min.e8c81a80fb85e6c4fe24d836a6985c92555d426de36f76ca65a76db6b9db6708.css" integrity="sha256-6MgagPuF5sT&#43;JNg2pphcklVdQm3jb3bKZadttrnbZwg=">
+  
+  
+  
+  <link rel="stylesheet" href="https://dan.bulwinkle.net/style-dark.min.0a647fb6c07e04b77b54fa0515d0a683d39ecdb251dba960fe1f966f7ff36fc2.css" media="(prefers-color-scheme: dark)" integrity="sha256-CmR/tsB&#43;BLd7VPoFFdCmg9OezbJR26lg/h&#43;Wb3/zb8I=">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+
+  
+  
+
+  <meta property="og:title" content="Automate Hotels" />
+<meta property="og:description" content="The airline industry is largely automated, so why aren&rsquo;t hotels?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dan.bulwinkle.net/blog/automate-hotels/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-04-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-04-13T00:00:00+00:00" />
+<meta itemprop="name" content="Automate Hotels">
+<meta itemprop="description" content="The airline industry is largely automated, so why aren&rsquo;t hotels?"><meta itemprop="datePublished" content="2023-04-13T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-04-13T00:00:00+00:00" />
+<meta itemprop="wordCount" content="751">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:image" content="https://dan.bulwinkle.net//img/../assets/hi.jpg"/>
+<meta name="twitter:title" content="Automate Hotels"/>
+<meta name="twitter:description" content="The airline industry is largely automated, so why aren&rsquo;t hotels?"/>
+
+  <!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+
+  
+  
+</head>
+
+  <body>
+    
+  <header>
+  
+  <div class="avatar">
+    <img class="avatarMask" src="https://dan.bulwinkle.net//img/../assets/hi.jpg" alt="">
+    <a href="https://dan.bulwinkle.net/"><img class="avatar-border" src="https://dan.bulwinkle.net//img/avatar-border.svg" alt=""></a>
+  </div>
+  
+  <h2><a class="author" href="https://dan.bulwinkle.net/">Dan Bulwinkle</a></h2>
+</header>
+
+  <h1>Automate Hotels</h1>
+  <p class="date">13 April 2023<br>
+  <span style="font-size:0.7em;">4 minute read</p>
+  
+  <div id="contentBody">
+    <div style="margin:auto;text-align:center;padding-bottom:20px">
+  <img src="https://dan.bulwinkle.net/blog/img/hotellobby.jpg" alt="A Hotel Lobby" width="600">
+<p><em>A Hotel Lobby<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></em></p>
+</div>
+<p><em>Version 0.95</em></p>
+<h3 id="the-problem">The Problem</h3>
+<p>I&rsquo;ll quickly review some issues with the hotel experience, though I imagine they are evident to most people.</p>
+<p>An obvious issue is check-in. It&rsquo;s unclear why this process is so time-consuming. I know there are
+apps that allow you to check in and use your phone as a key (which sometimes fails to work
+according to various hotel reviews), so let&rsquo;s simply consider a hotel without this
+capability. You have to say your name, they sometimes ask for more info, ID, credit card, and
+the process can take 10-20 minutes. That&rsquo;s a lot of time for something that doesn&rsquo;t exactly add to the experience.</p>
+<p><a href="https://twitter.com/dcurtis">Dustin Curtis</a> has probably stayed at over a thousand hotels.
+I was surprised to learn he uses hotels.com and sometimes
+HotelTonight<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Discovery, it seems, is still a problem. At the time Dustin wrote this hotels.com
+hadn&rsquo;t updated its interface in 20 years. It wasn&rsquo;t broken. I don&rsquo;t know what they did
+but since the update a few years ago there have been various issues like the map does not display all the
+hotels and filters do not produce correct results. Hipmunk was pretty solid early on and
+somehow that fizzled out. Hotels Tonight works great for narrow use cases. Most of the rest of the websites are half-baked.</p>
+<p>Hotels are commodities. Not long ago I stayed at a hotel in Colorado and loved it,
+so I booked the same brand in Indiana and it was like crossing the railroad tracks.
+For that reason I&rsquo;m not going to be loyal to a brand.</p>
+<p>If you&rsquo;ve ever been to New York, hotels typically partner with a garage. Often
+this isn&rsquo;t a problem, but it can be a bottleneck and I&rsquo;ve definitely waited
+quite some time for the valet to return with the car.</p>
+<p>There are quite a few other issues with hotels like new ones tend to be poorly built and I have yet to see a hotel luxury
+or not that has iron clad blackout blinds, but those issues are beyond the scope of &ldquo;automate hotels.&rdquo;</p>
+<h3 id="the-solution">The Solution</h3>
+<p>Automate all the things!</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Of course it isn’t. Hospitality is about making people feel human and enjoying it.</p>&mdash; dustin curtis (@dcurtis) <a href="https://twitter.com/dcurtis/status/1217076990148255744?ref_src=twsrc%5Etfw">January 14, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>Well, ok, automate <em>some</em> of the things. New York has a parking garage called AutoMotion. You approach the garage and drive your car onto a lift. After you get out you put in a credit card and get a receipt with which to retrieve your car. The car is then whisked into the garage using a robotic system. The price is market, but no tipping and a fairly predictable amount of time for retrieving your car. There are only a handful of these, and they seemed to stagnate not long after their debut more than 10 years ago. It works and should be the norm in any new construction not only in New York but everywhere it any city.</p>
+<p>Checking into a hotel should require nothing more than flashing your ID. What reason is there <em>not</em> to prepare your key card
+ahead of time? Why so much typing at the computer? Indeed, there are some hotels with key card kiosks. Misunderstandings like forgetting to inform the hotel you have a pet shouldn&rsquo;t be more than a small percentage of cases. I see no reason why it should take any longer than 2 minutes to check in.</p>
+<p>There are quite a few other things that could be done to modernize the hotel experience. Why is it that you get assigned a random room? Every room should be set at market rate. Few hotels have decent soundproofing in the cavity between the floor and the ceiling, and if you are on vacation the last thing you want is to hear the person upstairs on a business trip getting ready at 6am. On that note, hotels should allow patrons to submit their plans to an automated system that helps them
+identify where other people like them are going to be. Do you want to be in a room next to someone smoking on the balcony?</p>
+<p>The point is, hotels could do better and enable a <em>predictable</em> experience. Automation can help quite a bit here, but hotel
+executives need to secure the fundamentals. It seems like low hanging fruit if someone wants to start a hotel.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Photo by <a href="https://unsplash.com/pt-br/@ozzzyphotos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Oswald Elsaboath</a> on <a href="https://unsplash.com/s/photos/hotel-lobby?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>I&rsquo;m fairly certain this was a tweet, likely deleted&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Dustin Curtis wanted to do this &ndash; I wish he would!&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+  </div>
+  <footer>
+  <p>
+  &copy; 2023 Dan Bulwinkle.
+  Powered by <a href="https://gohugo.io/">Hugo</a>
+  using the <a href="https://github.com/koirand/pulp/">pulp</a> theme.
+  </p>
+</footer>
+
+
+  </body>
+</html>
