@@ -9,8 +9,7 @@
 <meta name="description" content="       Welcome! I am a software engineer and robotics enthusiast. My background is in cognitive science and computer science, and professionally I am currently interested in augmented reality, machine learning, and cryptocurrency. Current programming tools include Rust, Go, SwiftUI, Postgres, and React. 
     " />
 <meta name="author" content="" /><meta property="og:title" content="Autocomplete Selections Should Confirm with User" />
-<meta property="og:description" content="Version 0.95
-One UX issue that I run into more often than I&rsquo;d like: when you type in a text box and a list or drop down appears and you tap on it immediately, only to learn that between the milliseconds that your brain executed the tap and your fingers touched the screen a new item replaced your intended target.
+<meta property="og:description" content="One UX issue that I run into more often than I&rsquo;d like: when you type in a text box and a list or drop down appears and you tap on it immediately, only to learn that between the milliseconds that your brain executed the tap and your fingers touched the screen a new item replaced your intended target.
 Sometimes this is a more benign environment where you are searching for something and after you type a few letters what you want appears, but you managed to type another letter and the results are changed due to network delay." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dan.bulwinkle.net/blog/autocomplete/" /><meta property="article:section" content="blog" />
@@ -19,8 +18,7 @@ Sometimes this is a more benign environment where you are searching for somethin
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Autocomplete Selections Should Confirm with User"/>
-<meta name="twitter:description" content="Version 0.95
-One UX issue that I run into more often than I&rsquo;d like: when you type in a text box and a list or drop down appears and you tap on it immediately, only to learn that between the milliseconds that your brain executed the tap and your fingers touched the screen a new item replaced your intended target.
+<meta name="twitter:description" content="One UX issue that I run into more often than I&rsquo;d like: when you type in a text box and a list or drop down appears and you tap on it immediately, only to learn that between the milliseconds that your brain executed the tap and your fingers touched the screen a new item replaced your intended target.
 Sometimes this is a more benign environment where you are searching for something and after you type a few letters what you want appears, but you managed to type another letter and the results are changed due to network delay."/>
 
 <meta name="generator" content="Hugo 0.111.3">
@@ -103,12 +101,12 @@ Sometimes this is a more benign environment where you are searching for somethin
 
     
 
-    <p><em>Version 0.95</em></p>
-<p>One UX issue that I run into more often than I&rsquo;d like: when you type in a text box and a list or drop down appears and you tap on it immediately, only to learn that between the milliseconds that your brain executed the tap and your fingers touched the screen a new item replaced your intended target.</p>
+    <p>One UX issue that I run into more often than I&rsquo;d like: when you type in a text box and a list or drop down appears and you tap on it immediately, only to learn that between the milliseconds that your brain executed the tap and your fingers touched the screen a new item replaced your intended target.</p>
 <p>Sometimes this is a more benign environment where you are searching for something and after you type a few letters what you want appears, but you managed to type another letter and the results are changed due to network delay.</p>
 <p>I don&rsquo;t want to stray from the topic; however, I must point out that I&rsquo;ve seen this behavior pervasively in advertising. I first noticed it back in the early 2010s when using Meebo probably just before Google acquired it. You&rsquo;d go to type a message in response to one someone sent and, surprise!, the spot where you were about to tap to focus the input box became an ad, pushing the input box higher in the interface. It seemed too well timed to be just a coincidence. Today I see this exact kind of behavior with Amazon, though it seems they are starting to transition to just making every result an ad so no need to trick you into clicking. Sadly I&rsquo;ve even seen this with DuckDuckGo, eroding my trust in that company<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. What I can&rsquo;t fathom is how the engineers behind these platforms let it happen. They must know what they are doing. Or, if you are a fraud investigator and search on Amazon and accidentally click one of these ads do you say to yourself, &ldquo;Haha! I was fooled again!&rdquo; The advertisers meanwhile don&rsquo;t seem to care either, because revenue &gt; cost of marketing?</p>
 <p>Transitioning back to the crux of my post: there&rsquo;s no technical reason for this! If you are planning to asynchronously return some kind of result in addition to your server-side result, it&rsquo;s obvious that you can put a placeholder in your template. The contents of the placeholder can be up to your imagination: &ldquo;Our valued sponsors have a result just for you.&rdquo; It may be more effective to humanize the results than just treating the user as a sucker. &ldquo;Got you, fool! Now pay me $8.&rdquo;</p>
 <p>Another way to deal with this, in the case of results in apps with search/dropdown combos without monetization incentives, is to calculate the time it takes between the last result populated and the newly invalidated list. In fact, use the same UX exploit that seemed to be happening with Meebo but display a dialog asking the user if they meant the previous result, current result, or something else. That this would only happen in circumstances where there was incongruity between the user&rsquo;s input and the lagged result means it would be infrequent. Empirically it doesn&rsquo;t happen often, but when it does it can be obnoxious and cause more grief than a simple confirmation dialog box.</p>
+<p><em>Version 0.95</em></p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -130,6 +128,8 @@ Sometimes this is a more benign environment where you are searching for somethin
         
         </li>
         <li>
+        
+            <a href="https://dan.bulwinkle.net/blog/the-best-ceos-respond/">The Best CEOs Respond <i class="fa fa-chevron-circle-right"></i> </a>
         
         </li>
     </ul>
