@@ -1,0 +1,195 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>VPNs should use Public-Key Cryptography instead of long codes - Dan Bulwinkle</title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="       Welcome! I am a software engineer and robotics enthusiast. My background is in cognitive science and computer science, and professionally I am currently interested in augmented reality, machine learning, and cryptocurrency. Current programming tools include Rust, Go, SwiftUI, Postgres, and React. 
+    " />
+<meta name="author" content="" /><meta property="og:url" content="https://dan.bulwinkle.net/blog/why-dont-vpns-use-key-encryption/">
+  <meta property="og:site_name" content="Dan Bulwinkle">
+  <meta property="og:title" content="VPNs should use Public-Key Cryptography instead of long codes">
+  <meta property="og:description" content="Some VPN services use a mere long numerical value to authenticate users, which seems to be a security issue.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2025-05-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-09T00:00:00+00:00">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="VPNs should use Public-Key Cryptography instead of long codes">
+  <meta name="twitter:description" content="Some VPN services use a mere long numerical value to authenticate users, which seems to be a security issue.">
+
+<meta name="generator" content="Hugo 0.142.0">
+    
+    <link rel="shortcut icon" href="favicon.ico" />
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://dan.bulwinkle.net/fontawesome/css/all.min.css" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="https://dan.bulwinkle.net/css/styles.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      
+      <h1>
+        <a href="https://dan.bulwinkle.net/">Dan Bulwinkle</a>
+      </h1>
+
+      <ul id="social-media">
+      </ul>
+      
+      <p><em>Innovation, Startups, Finance, Robotics, Cognitive Science, Computer Science, Philosophy</em></p>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="https://dan.bulwinkle.net/blog/">
+                <i class="fa-li fa  fa-lg"></i><span>Blog</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="mailto:website@bulwinkle.net">
+                <i class="fa-li fa  fa-lg"></i><span>Email</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>VPNs should use Public-Key Cryptography instead of long codes</h1>
+
+    
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2025-05-09T00:00:00Z">May 9, 2025</time>
+        </li>
+        
+        
+
+        
+
+        <li>3 minute read</li>
+    </ul>
+</aside>
+
+    
+
+    
+      
+
+    
+
+    <p><em>Version 0.9</em></p>
+<p>A few years ago there was a lot of hype around Mullvad VPN, particularly on Hacker News. Whenever I saw an article posted
+where the comments subsequently extolled the virtue of the service, I had to check profiles to gauge the integrity of the
+poster.</p>
+<p>VPN services have a spotty history due to internal policies, technical oversights, and shady corporate structures. They are tasked with allowing people to masquerade as if they were in another location and among a large crowd of other users, so you will see them competing on &ldquo;no logging,&rdquo; security audits, and various methods of payment.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>When security researchers have something to say online, I pay attention. Like anything else, you cannot take what they say at face value but strongly consider it
+as truth, especially when you had no basis for whatever the topic may be. Long ago I used algo until wireguard became a favorite tunneling method of that crowd.
+Below is a list of esteemed security researchers and the VPN service each recommends.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Name of Security Researcher</th>
+          <th>VPN Recommendation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td> </td>
+          <td> </td>
+      </tr>
+  </tbody>
+</table>
+<p><em>table 1.1: list of security researcher vpn recommendations</em></p>
+<p>I wouldn&rsquo;t say I bought into the hype. In the absence of any security researcher recommending it, I decided to give it a try. Signup involves receiving a long code which you use
+to generate up to 5 profiles. You can use their client or install the wireguard (etc.) profile yourself. I did both methods and managed my profiles from time to time using my long code.
+I had thought I settled on just two profiles: one for mobile, and one for desktop, deleting a couple while playing around with it. To my surprise, I logged in and saw a total of
+4 profiles. I deleted two I didn&rsquo;t recognize, made sure it was the case, and continued testing it out. A week or two later I logged in and saw a total of 3 profiles.</p>
+<p>What was going on here? Was there a bug generating profiles? Was someone else&rsquo;s profile being generated under my account? The account, after all, is just a string. If I had some
+malware on my computer you&rsquo;d think credit card information stored in the browser is more valuable than a $5 VPN service. There is little information about the nature of the company:
+how many employees do they have, what process do they have in place, is this access code encrypted using bcrypt with sufficient rounds or plaintext in their database? You can imagine
+a number of scenarios if this access code is in plaintext. It&rsquo;d be a huge security risk. Even if it were encrypted, at some point is isn&rsquo;t, which makes it a de facto risk.</p>
+<p>I&rsquo;m a fan of Problem-Solution blog posts. Instead of sounding like I&rsquo;m complaining, I&rsquo;ll present it as &ldquo;this isn&rsquo;t quite right&rdquo; and &ldquo;how it could be better.&rdquo;<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>
+It seems obvious that instead of some long string that&rsquo;s assigned to you, they issue you a private key. This way, you can simply generate a new private key on your own system and
+sign over the corresponding public key with your old private key so the company knows you&rsquo;ve authorized a new key. Anyone remotely technical could do this. For those non-technical, the company&rsquo;s app,
+presumably open source and audited, could do it.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>For some reason they all accept Bitcoin and Monero but nothing else? Bitcoin isn&rsquo;t any more anonymous than Ethereum (read: they&rsquo;re not).&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>There&rsquo;s a ton that&rsquo;s obviously wrong with the world that could be vastly improved and therefore there are companies and nonprofits just itching to be formed.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        <li>
+        
+            <a href="https://dan.bulwinkle.net/blog/the-best-ceos-respond/"><i class="fa fa-chevron-circle-left"></i> The Best CEOs Respond</a>
+        
+        </li>
+        <li>
+        
+        </li>
+    </ul>
+</section>
+  
+    
+  
+
+
+
+
+
+</main>
+    <footer>
+        <ul>
+            <li>
+                <h6>
+                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+                    <a href="https://dan.bulwinkle.net/index.xml">Subscribe </a></h6>
+            </li>
+            
+            
+        </ul>
+    </footer>
+</div>
+<script src="https://dan.bulwinkle.net/js/scripts.js"></script>
+
+</body>
+
+</html>
+
