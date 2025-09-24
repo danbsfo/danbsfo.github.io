@@ -1,0 +1,230 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>Full Self Driving Cars - Dan Bulwinkle</title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="       Welcome! I am a software engineer and robotics enthusiast. My background is in cognitive science and computer science, and professionally I am currently interested in augmented reality, machine learning, and cryptocurrency. Current programming tools include Rust, Go, SwiftUI, Postgres, and React. 
+    " />
+<meta name="author" content="" /><meta property="og:url" content="https://dan.bulwinkle.net/blog/full-self-driving-cars/">
+  <meta property="og:site_name" content="Dan Bulwinkle">
+  <meta property="og:title" content="Full Self Driving Cars">
+  <meta property="og:description" content="Three points on why full self driving cars haven’t arrived yet">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2025-09-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-09-24T00:00:00+00:00">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Full Self Driving Cars">
+  <meta name="twitter:description" content="Three points on why full self driving cars haven’t arrived yet">
+
+<meta name="generator" content="Hugo 0.142.0">
+    
+    <link rel="shortcut icon" href="favicon.ico" />
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://dan.bulwinkle.net/fontawesome/css/all.min.css" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="https://dan.bulwinkle.net/css/styles.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      
+      <h1>
+        <a href="https://dan.bulwinkle.net/">Dan Bulwinkle</a>
+      </h1>
+
+      <ul id="social-media">
+      </ul>
+      
+      <p><em>Innovation, Startups, Finance, Robotics, Cognitive Science, Computer Science, Philosophy</em></p>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="https://dan.bulwinkle.net/blog/">
+                <i class="fa-li fa  fa-lg"></i><span>Blog</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="mailto:website@bulwinkle.net">
+                <i class="fa-li fa  fa-lg"></i><span>Email</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>Full Self Driving Cars</h1>
+
+    
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2025-09-24T00:00:00Z">Sep 24, 2025</time>
+        </li>
+        
+        
+
+        
+
+        <li>9 minute read</li>
+    </ul>
+</aside>
+
+    
+
+    
+      
+
+    
+
+    <p><em>Version 0.95</em></p>
+<div style="margin:auto;text-align:center">
+  <img src="https://dan.bulwinkle.net/blog/img/stanley.jpg" style="max-width:800px" alt="Stanley">
+  <em>Stanley, winner of the DARPA Grand Challenge. Steve Jurvetson / Wikipedia</em>
+</div>
+<p>I had planned to write a version of this in 2018 specifically addressing Tesla, but
+I think it is important to include the now-autonomous car industry as well.</p>
+<p>Since I haven&rsquo;t heard it said explicity, I will go over 3 specific reasons why autonomous cars
+aren&rsquo;t and can&rsquo;t be autonomous, and why companies like Tesla are in worse shape than those like Waymo.</p>
+<p>I am absolutely an optimist. I bought an iPhone the day it came out when at the time several
+critics wrote that it was NGMI. Without test driving one, I bought a 4 digit VIN Model S in 2013 <em>because</em>
+of the New York Times article from that February with a photo of a Model S being towed. With robotics I&rsquo;m
+no less optimistic; the thing to remember about robotics is that there is a line between engineering and
+fantasy.</p>
+<p>You can engineer a robot to clean debris from a pool. The reason this is the case is because the <em>task</em>
+is clearly defined and the <em>environment</em> is clearly defined. For autonomous cars, the task is nearly (with some edge cases)
+perfectly defined, but the environment is not a grid with traffic lights and stop signs, but a very complex world with
+several unpredictable factors including weather, humans, animals, road conditions. To tackle this and believe it is merely
+a difficult engineering problem is as foolish as the predictions of the 1956 Dartmouth conference.</p>
+<h2 id="lidar-cameras-and-sensor-fusion">Lidar, Cameras, and Sensor Fusion</h2>
+<p>The trigger for this blog post was a <a href="https://xcancel.com/ray4tesla/status/1950368775888568814#m">clip that Musk re-xed</a><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+where the former CEO of defunct self-driving company Cruise claimed Tesla was right to chiefly utilize cameras and stay clear of Lidar sensors. According to him, Waymo is heading in that direction. Over a long enough time horizon he believes autonomous cars will all be camera-based.</p>
+<p>Robotics is not a computer science efficiency problem. The reason for an array of sensor types is not to train a camera system and it is not to otherwise bootstrap a self-driving car to use fewer sensors. The real world is very noisy, and different sensors work well for different use cases at different
+times. Critically, autonomous robots in high stakes environments like roadways require redundant sensors.</p>
+<p>I&rsquo;ve heard several experts<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> shy away from that reality saying things like &ldquo;it&rsquo;s complementary, not redudant.&rdquo; It may be true that the primary use case is complementary, but if a rock smashes into the middle of the windshield (where the main stereo camera system is housed) while in the left lane of a busy a highway, I hope the autonomous car I&rsquo;m in has Lidar so it can safely pull over. If you&rsquo;ve driven through Vermont or Tahoe in the winter in a Tesla<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, you get messages asking to clean some camera or other. The engineers thought about the &ldquo;de-icing problem&rdquo; but failed to put little windshield wipers by each camera to clear salt residue. Even a radar sensor could mean the difference between a safe halt or a multi-car accident.</p>
+<p>Tesla removed radar sensors claiming that when the car approached a bridge, the radar sensor would give an inaccurate reading and cause problems. I&rsquo;ve owned an ICE car that was decked out with a radar sensor for following the car in front of it without intervention on the highway. That worked out rather well. If anything, no matter the company, every autonomous vehicle should start out with a fusion of sensors. In order to remove sensors, it should be proven that the sensors are not necessary. For example, maybe you don&rsquo;t need 3 lidar sensors, you only need one.</p>
+<p>Musk&rsquo;s quip that &ldquo;we don&rsquo;t have lasers shooting out of our eyes&rdquo; is telling: robots are not humans and as long as they are using electronic components they will need to be treated as machines. If they are in an uncontrolled environment they are going to need redundant hardware.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
+<h2 id="software-verification">Software Verification</h2>
+<p>Autonomous cars are stochastic systems. A neural network, end-to-end or not, cannot be deterministic. You can run camera input through a Gaussian function for preprocessing and some variant in stimulus, like the way the sun shines or reflects off a color, will cause the result to be different.</p>
+<p>If you have driven in a Tesla, you&rsquo;ve seen the objects on the screen transform into different objects, sometimes ghost objects that aren&rsquo;t there.</p>
+<div style="margin:auto;text-align:center">
+  <img src="https://dan.bulwinkle.net/blog/img/teslavision.jpg" style="max-width:800px" alt="Tesla Vision">
+    <em>Tesla classifies its own car is a truck. Nov 2023</em>
+</div>
+<p>Tesla&rsquo;s console software is complex and buggy. A few weeks ago the Tesla audio app was stuck in a weird state where the display didn&rsquo;t reflect what I was hearing on the speakers. After trying many ways to overcome the situation, I had hold both steering wheel buttons down to restart the computer. You don&rsquo;t want to do that if the autonomous driving software falls into some local minimum! Which makes me wonder: why doesn&rsquo;t Tesla verify their console software? It doesn&rsquo;t give me confidence that there are bugs like that in the console, and I&rsquo;m surprised that other people haven&rsquo;t run into bugs and made the analogy: what if there is a bug in the autonomous software, which, by the way, already isn&rsquo;t possible to apply software verification due to its non-deterministic nature.</p>
+<h2 id="sentience">Sentience</h2>
+<p>In order to have complete self-driving, without any human intervention what-so-ever on the roads as they exist today, you need
+sentience. Or, to put it another way, if self driving cars truly exist, you&rsquo;ll have a lot more types of
+robotics completely autonomously operating.</p>
+<p>A good illustration of the degree of cognitive ability here is in the movie Short Circuit
+when Johnny 5 lands on a grasshopper and asks Stephanie to re-assemble the grasshopper. It quickly learns the value of life. It&rsquo;s also
+what Detective Spooner reflects on in iRobot: don&rsquo;t calculate the odds of survival, save the girl. An LLM, despite largely being a reflection on society&rsquo;s social mores, is not sufficient because it lacks authenticity. Another way to say <em>that</em>, is that as long as OpenAI has a disclaimer below their input box, there&rsquo;s a chance the resulting decision will be garbage. The cars need to be an incarnation of <a href="https://en.wikipedia.org/wiki/Initial_D">Takumi</a> otherwise there will be no trust.</p>
+<p>Today, every single autonomous car company has humans in the loop ready to take over. The extent likely varies, and in the case of Cruise we saw that there are some limitations to this attempt to solve the last 5% of autonomy. It is very unlikely that &ndash; until almost every car is autonomous &ndash; this will change in the near future. There must be a fundamental breakthrough that is on the order of a sentient being.</p>
+<p>About 10 years ago in Mountain View I was riding my bike through a round-about. A Google car (as it were) had entered, so I thought I&rsquo;d wait for it to make its way through before I went. I guess most bikers claim right of way, because the car came to a halt. The two testers had to hit a button to restart the car. So I went off to the side, again, to wait for it to continue, and I rode in circles. The car halted once again. The testers were laughing and hit the start button again, and I went on my way. It was an important lesson: self-driving cars have no way to deal with people in the real world. In the recent LA unrest Waymo cars were abused. If a mob decends on a car in New York, the driver will get scared and attempt to flee; would a self-driving car do that today? Could you issue a voice command &ldquo;my safety is at stake, be more aggressive&rdquo; and would it obey?</p>
+<p>Rodney Brooks has been criticizing the hype of self-driving cars for years. There are few people in AI who seem
+grounded (no pun intended) to the nature of intelligence (LeCunn, Mitchell, Brockman are a few others). Brooks
+has been at it since nearly the beginning, starting out at Stanford&rsquo;s SAIL and engaging with robots of various
+types at MIT for decades. To boot, he is one of the few people who has actually created a massively successful consumer
+robotics company, and that, too, was decades ago. It&rsquo;s worth <a href="https://rodneybrooks.com/predictions-scorecard-2025-january-01/">reading Brooks&rsquo;s latest prediction scoresheet</a>.</p>
+<h2 id="whats-the-solution">What&rsquo;s the solution?</h2>
+<p>In 2020 I considered emailing the board<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> of Comma AI, a company which makes a dashboard device that connects to a car&rsquo;s
+CAN bus &ndash; an adhoc self-driving technology. It seems this wasn&rsquo;t yet working as anticipated, and egos clashed between
+the heads of Tesla and Comma AI regarding who would achieve self-driving first. (Why the chutzpah? Prove it.)</p>
+<p>My suggestion was going to be to steer the company in a direction where the customer is not drivers, but insurance companies.
+It could be a system where the more people who joined, the steeper your insurance
+discount would be. Why? Because if everyone had a form of self-driving technology, there&rsquo;d be an enormous
+reduction in accidents. There would still be accidents, but of the type where two cars collide head on or side-swipe,
+the number would approach zero.</p>
+<p>Rodney Brooks pioneered the <a href="https://dspace.mit.edu/bitstream/handle/1721.1/6432/AIM-864.pdf?sequence=2&amp;isAllowed=y">subsumption architecture</a>, which is essentially levels for robot control and was adapted to hierarchical control
+systems in <a href="https://robots.stanford.edu/papers/thrun.stanley05.pdf">Stanley</a>, which won the DARPA grand challenge, and other autnomous vehicles. At a basic level a car should avoid hitting anything around it and communicate with other cars. If such a system were implemented in vehicles, you could imagine a worst case scenario of spring-like behavior as people drove, but the best case would mirror an ideal computer simulation of traffic on the roadway since one person braking for no particular reason wouldn&rsquo;t cause a domino effect of cars braking.</p>
+<p>I&rsquo;m not sure why every company seems super focused on full self driving, rather than a robust network of partially self-driving cars. Society would be better off. After over 10 years of this, people still buy into the hype despite daily fatal collisions with cars, bicycles, and pedestrians. It&rsquo;s unfathomable that leaders of these companies are flexing but, imho, have proven nothing. If your cybertruck is safe, it shouldn&rsquo;t be flipping over a retaining wall in Oakland under any circumstance. I hope either I&rsquo;m wrong and full self driving cars become standard in short order, or that something changes enabling every car with a CAN bus to at least avoid serious accidents.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://youtu.be/eXbrt_2Fvgk">Original Stripe interview</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>I mean, there really is no such thing as a self-driving expert because self-driving cars <em>do not exist</em>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Still unfortunately the best EV. I feel like I&rsquo;m waving $50,000 in the air and dozens of automakers shrug indifference.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Tesla does have redundant AI chips!&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>I could have networked my way or cold emailed, and I decided it just wasn&rsquo;t worth it, though I wish I did anyway.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        <li>
+        
+            <a href="https://dan.bulwinkle.net/blog/trader-joes-does-not-have-surveillance-cameras/"><i class="fa fa-chevron-circle-left"></i> Trade Joe&#39;s Does Not Have Surveillance Cameras</a>
+        
+        </li>
+        <li>
+        
+        </li>
+    </ul>
+</section>
+  
+    
+  
+
+
+
+
+
+</main>
+    <footer>
+        <ul>
+            <li>
+                <h6>
+                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+                    <a href="https://dan.bulwinkle.net/index.xml">Subscribe </a></h6>
+            </li>
+            
+            
+        </ul>
+    </footer>
+</div>
+<script src="https://dan.bulwinkle.net/js/scripts.js"></script>
+
+</body>
+
+</html>
+
